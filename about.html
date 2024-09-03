@@ -19,7 +19,8 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                font-family: Montserrat,sans-serif
+                font-family: Montserrat,sans-serif;
+                text-decoration: none;
             }
 
             header {
@@ -40,12 +41,12 @@
                 gap: 4rem
             }
 
-            nav ul li {
-                cursor: pointer;
-                transition: color .5s
+            a:visited {
+                color:#ffffff;
+                text-decoration:none;
             }
 
-            nav ul li:hover {
+            a:hover {
                 color: #407bff;
             }
 
@@ -80,6 +81,59 @@
                 height: 100%;
                 background-color: #000000;
                 color: white;
+            }
+
+            .apresentation {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem
+            }
+
+            .apresentation h1 {
+                font-size: 4.8rem;
+                font-weight: 600;
+                letter-spacing: 6%
+            }
+
+            .apresentation p {
+                max-width: 600px;
+                text-align: justify;
+                font-size: 1.8rem;
+                line-height: 1.8;
+                margin-bottom: 2rem;
+                align-items: left;
+                letter-spacing: 4%;
+            }
+
+            @media screen and (max-width: 780px) {
+            .apresentation h1 {
+                font-size:3.6rem
+                }
+            }
+
+            .apresentation p {
+                max-width: 38rem;
+                font-size: 1.4rem
+                }
+
+            @media screen and (max-width: 480px) {
+            .apresentation h1 {
+                max-width:30rem;
+                font-size: 3rem;
+                text-align: center
+                }
+
+            .apresentation p {
+                max-width: 28rem;
+                font-size: 1.2rem;
+                text-align: center;
+                }
+            }
+
+            hr {
+                width: 50%;
             }
 
             .footer {
@@ -131,31 +185,40 @@
 
         </style>
 </head>
+<header class="header-light">
+    <div class="logo">Lucas Giacomelli</div>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">Sobre</a></li>
+            <li> <a href="formacao.html">Formação</a></li>
+            <li> <a href="projetos.html">Projetos</a></li>
+            <li> <a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <header class="header-light">
-        <div class="logo">Lucas Giacomelli</div>
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="about.html">Sobre</a></li>
-                <li> <a href="formacao.html">Formação</a></li>
-                <li> <a href="projetos.html">Projetos</a></li>
-                <li> <a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<br><br><br><br><br>
+<section class="about-template">
+    <section class="apresentation">
+        <h1 >Sobre mim</h1>
+        <hr>
+        <p>Um constante aprendiz, entusiasta do mundo tecnológico e suas ramificações, que curte saber como tudo isso funciona.</p>
+        <p>Sou estudante do curso de Análise e Desenvolvimento de Sistemas, e estou em busca de mais conhecimento, sanando curiosidades e indo atrás de novos desafios.</p>
+        <p>Nos dias atuais, sou Analista de Testes de um sistema ERP, com um foco no ramo varejista. Esse foco nasce da minha experiência anterior como Analista de Implementação na mesma empresa e também na Raia Drogasil S/A, onde trabalhei por mais de 4 anos. Nessa empresa tive a oportunidade de iniciar minha carreira como atendente I, passar para atendente II e ser promovido para um cargo de liderança, tendo o posto de supervisor, liderando um time com mais de 10 colaboradores.</p>  
+        <p>Tenho uma paixão pelo mundo dos games e sou amante de um futebol, tendo esses como os meus principais hobbies. </p>  
+        </div>
+    </section>
+</section>
+<br><br><br><br><br>
 </body>
-
-
-
-        <footer class="footer">
-            <div class="contact">
-                <a class="icon__contact" href="https://www.linkedin.com/in/lucas-giacomelli-bb4922219" target="_blank">
-                    <i class="fa-brands fa-linkedin-in" aria-hidden="true">
-                    </i></a>
-                    <a class="icon__contact" href="https://api.whatsapp.com/send?phone=5551995534090&amp;text=Olá,%20como%20vai?!" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-                    <a class="icon__contact" href="mailto:lukas.giacomelly@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></div>
-            <div class="copyright"><p>© LUCAS GIACOMELLI 2024 | Todos os direitos reservados.</p></div>
+    <footer class="footer">
+        <div class="contact">
+            <a class="icon__contact" href="https://www.linkedin.com/in/lucas-giacomelli-bb4922219" target="_blank">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a class="icon__contact" href="https://api.whatsapp.com/send?phone=5551995534090&amp;text=Olá,%20como%20vai?!" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a class="icon__contact" href="mailto:lukas.giacomelly@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></div>
+        <div class="copyright"><p>© LUCAS GIACOMELLI 2024 | Todos os direitos reservados.</p></div>
         
-        </footer>
+    </footer>
 </html>
